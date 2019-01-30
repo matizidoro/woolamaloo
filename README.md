@@ -39,3 +39,6 @@ Before running this project, you will need to have the steps below done.
     ```  
       python3 script.py
     ```
+## The Script
+
+   - The script only will ask you for the directories of both files (the simplified one - which I considered using .txt - and .csv). If the files are in the same script directory, just insert their names without the extensios, i.e simplified_file, csv_file;
