@@ -1,0 +1,8 @@
+id,name,admission_date,demission_date,department,position
+1234,Aldo Zanchertine,13/11/1991,,Mathematics,Professor
+4321,Rufus Parket,11/05/1996,14/01/2019,Transportation,Driver
+1548,Paulo André,15/12/1994,,Physics,Professor
+4585,Carlos Nascimento,15/08/2005,,Computer,Professor
+3698,Irmão do Jorel,17/09/1972,25/11/2004,Health,Doctor
+1123,Jorel,10/04/1971,15/03/2001,IT,Technician
+2548,Vovó Juju,01/01/1940,31/12/1970,Drugs,Drug Dealer

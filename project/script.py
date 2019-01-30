@@ -1,13 +1,10 @@
 import pandas as pd
 
-# /home/izidoro/Área de Trabalho/marotage.txt
-
 # find the path to the simplified file
 while True:
     try:
-        directory = '/home/izidoro/Área de Trabalho/marotage.txt'
-        # input('Insert the directory of the simplified file:')
-        simplified_file = pd.read_csv(directory, delimiter=',') # convert the file into a DataFrame
+        directory = input('Insert the directory of the simplified file or its name if it is in the same folder as script.py:')
+        simplified_file = pd.read_csv(directory + ".txt", delimiter=',') # convert the file into a DataFrame
         break
     except IOError as e:
         # 'No such file or directory'
@@ -18,9 +15,8 @@ while True:
 # find the path to the csv file
 while True:
     try:
-        directory = '/home/izidoro/Área de Trabalho/marotagb.csv'
-        # input('Insert the directory of the csv file:')
-        csv_file = pd.read_csv(directory, delimiter=',')        # convert the file into a DataFrame
+        directory = input('Insert the directory of the csv file or its name :')
+        csv_file = pd.read_csv(directory + ".csv", delimiter=',')        # convert the file into a DataFrame
         break
     except IOError as e:
         # 'No such file or directory'
@@ -36,13 +32,10 @@ csv_file = csv_file.sort_values(by=['employeeNumber'])
 simplified_file = simplified_file.reset_index(drop=True)
 csv_file = csv_file.reset_index(drop=True)
 
-print(simplified_file)
-print(csv_file)
-
 print(' Woolamaloo Synchronization Report  ')
-print('------------------------------------')
+print('--------------------------------------------------------------------------------------------')
 print("\nID     Name              Status  ")
-print('----- ------------------ --------')
+print('----- ------------------ -------------------------------------------------------------------')
 
 # compares data 'till the end of the dataframes
 i = j = 0
